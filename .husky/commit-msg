@@ -1,0 +1,12 @@
+# Commit message validation
+commit_regex='^(feat|fix|docs|style|refactor|test|chore|perf|build|ci|revert)(\(.+\))?: .{1,50}|^Merge .+'
+
+if ! grep -qE "$commit_regex" "$1"; then
+    echo "Invalid commit message format!"
+    echo "Format: type(scope): description"
+    echo "Types: feat, fix, docs, style, refactor, test, chore, perf, build, ci, revert"
+    echo "Or Merge commits are allowed"
+    echo "Example: feat(auth): add login functionality"
+    echo "Example: Merge branch 'dev' of https://github.com/..."
+    exit 1
+fi 

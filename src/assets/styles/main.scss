@@ -1,0 +1,6 @@
+// 사이트 전반에 걸쳐 재사용되는 스타일 정의
+@forward "base/typography";
+
+// 다른 정의된 스타일을 보조하는 역할
+@forward "abstracts/mixins";
+@forward "abstracts/variables";

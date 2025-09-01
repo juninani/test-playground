@@ -1,0 +1,100 @@
+@mixin typography($size, $weight) {
+	font-size: $size;
+	font-weight: $weight;
+}
+
+@mixin l-14 {
+	@include typography(14px, 300);
+	line-height: 18.2px;
+}
+
+@mixin l-16 {
+	@include typography(16px, 300);
+}
+
+@mixin r-12 {
+	@include typography(12px, 400);
+	line-height: 15.6px;
+}
+
+@mixin r-14 {
+	@include typography(14px, 400);
+	line-height: 18.2px;
+}
+
+@mixin r-16 {
+	@include typography(16px, 400);
+	line-height: 20.8px;
+}
+
+@mixin r-18 {
+	@include typography(18px, 400);
+	line-height: 23.4px;
+}
+
+@mixin r-24 {
+	@include typography(24px, 400);
+	line-height: 31.2px;
+}
+
+@mixin m-16 {
+	@include typography(16px, 500);
+	line-height: 20.8px;
+}
+
+@mixin m-18 {
+	@include typography(18px, 500);
+	line-height: 23.4px;
+}
+
+@mixin m-24 {
+	@include typography(24px, 500);
+	line-height: 31.2px;
+}
+
+@mixin m-44 {
+	@include typography(44px, 500);
+}
+
+@mixin b-10 {
+	@include typography(10px, 700);
+	line-height: 11.93px;
+}
+
+@mixin b-12 {
+	@include typography(12px, 700);
+	line-height: 15.6px;
+}
+
+@mixin b-14 {
+	@include typography(14px, 700);
+	line-height: 18.2px;
+}
+
+@mixin b-16 {
+	@include typography(16px, 700);
+	line-height: 20.8px;
+}
+
+@mixin b-18 {
+	@include typography(18px, 700);
+	line-height: 23.4px;
+}
+
+@mixin b-20 {
+	@include typography(18px, 700);
+	line-height: 30px;
+}
+
+@mixin b-24 {
+	@include typography(24px, 700);
+	line-height: 31.2px;
+}
+
+@mixin b-44 {
+	@include typography(44px, 700);
+}
+
+@mixin h-9 {
+	@include typography(9px, 900);
+}

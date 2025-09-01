@@ -1,0 +1,163 @@
+html,
+body,
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+	margin: 0;
+}
+
+main,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+tfoot,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+textarea,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	// font-size: 100%;
+	vertical-align: baseline;
+	box-sizing: border-box;
+}
+
+a {
+	color: black;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	font-family: "Pretendard Variable", sans-serif;
+	// color: $color-text;
+	line-height: 1.4;
+}
+
+ol,
+ul,
+li {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+button {
+	font: inherit;
+	vertical-align: baseline;
+	border: 0;
+	background: none;
+	// color: $color-text;
+	outline: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:link,
+a:visited {
+	// color: $color-text;
+	font-size: 100%;
+	text-decoration: none;
+}
+
+a::before {
+	content: "";
+	position: absolute;
+	font-size: 0;
+}
