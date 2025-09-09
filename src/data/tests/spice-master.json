@@ -1,0 +1,61 @@
+{
+	"id": "spice-master",
+	"title": "맵고수 테스트",
+	"subtitle": "당신의 매운맛 내성과 성향을 측정합니다!",
+	"category": "meme",
+	"icon": "🌶️",
+	"cover": "/images/tests/spice-master/cover.png",
+
+	"questions": [
+		{
+			"id": "q1",
+			"type": "single",
+			"prompt": "평소 매운 음식 선호도는?",
+			"options": [
+				{ "id": "q1o1", "label": "거의 안 먹음", "weights": { "tolerance": 0 } },
+				{ "id": "q1o2", "label": "가끔 먹음", "weights": { "tolerance": 1 } },
+				{ "id": "q1o3", "label": "자주 먹음", "weights": { "tolerance": 2 } },
+				{ "id": "q1o4", "label": "매일 없으면 허전", "weights": { "tolerance": 3 } }
+			]
+		},
+		{
+			"id": "q2",
+			"type": "likert",
+			"prompt": "새로운 매운 메뉴가 나오면 꼭 도전한다.",
+			"scale": {
+				"min": 1,
+				"max": 5,
+				"labels": ["전혀아님", "아님", "보통", "그럼", "매우그럼"]
+			},
+			"map": {
+				"1": { "tolerance": 0 },
+				"3": {},
+				"5": { "tolerance": 2 }
+			}
+		}
+	],
+
+	"results": [
+		{
+			"id": "novice",
+			"title": "맵초보",
+			"description": "매운맛에 약한 타입! 맛의 균형을 중시합니다.",
+			"image": "/images/tests/spice-master/result_novice.png",
+			"when": { "tolerance_lte": 1 }
+		},
+		{
+			"id": "master",
+			"title": "맵고수",
+			"description": "강매운도 즐기는 진정한 고수!",
+			"image": "/images/tests/spice-master/result_master.png",
+			"when": { "tolerance_gte": 3 }
+		},
+		{
+			"id": "balanced",
+			"title": "맵중수",
+			"description": "적당히 즐길 줄 아는 타입, 현명한 선택을 합니다.",
+			"image": "/images/tests/spice-master/result_intermediate.png",
+			"when": { "default": true }
+		}
+	]
+}
